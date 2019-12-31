@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "declaration": true,
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "lib": [
+      "es2017",
+      "es2016",
+      "dom"
+    ],
+    "jsx": "react",
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
