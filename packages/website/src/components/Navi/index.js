@@ -21,7 +21,7 @@ class Navi extends React.Component {
     const { location, title } = this.props;
 
     return (
-      <nav className="navbar navbar-expand-md navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-md navbar-light bg-primary">
         <Meta />
         <div className="container px-0">
           <Link className="text-center" to="/">
