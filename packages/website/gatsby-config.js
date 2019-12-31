@@ -163,12 +163,10 @@ module.exports = {
                     frontmatter {
                       layout
                       title
-                      link
                       date(formatString: "YYYY/MM/DD")
                       publishDate: date
                       category
                       tags
-                      excerpt
                       description
                     }
                   }
