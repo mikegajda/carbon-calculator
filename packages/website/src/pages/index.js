@@ -1,47 +1,58 @@
-import React from 'react'
-import Meta, { defaultTitlePrefix, getTitleFromHostname } from 'components/Meta'
-import Layout from 'components/Layout'
-import Img from 'gatsby-image'
-import { Link } from 'gatsby'
-import { CarbonFootprint } from '../../../shared/src/components/CarbonFootprint'
+import React from "react";
+import Meta, {
+  defaultTitlePrefix,
+  getTitleFromHostname
+} from "components/Meta";
+import Layout from "components/Layout";
+import { DemoCard } from "./demo";
+import { CarbonFootprintCalculationsCard } from "./carbon-footprint-calculations";
 
 class index extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { price: 12.00 }
+  constructor(props) {
+    super(props);
+    this.state = { price: 12.0 };
   }
 
-  render () {
+  render() {
     return (
-      <Layout location={'/'}>
+      <Layout location={"/"}>
         <div className="px-0">
-          <Meta title={`Home`} description={`Description`} url={`/`}/>
+          <Meta title={`Home`} description={`Description`} url={`/`} />
+          <DemoCard />
           <article className="container p-0 card my-4 shadow">
             <div className="card-body">
-              <h1 className="">Live Demo</h1>
-              <div className={'form-group'}>
-                <label htmlFor="exampleInputEmail1">Price of item (USD $)</label>
-                <input type="number" className="form-control" id="demoInput" aria-describedby="priceHelp"
-                       placeholder="Price" onChange={(e) => {
-                  this.setState({
-                    price: e.target.value
-                  })
-                }}
+              <h1>Chrome Extension</h1>
+              <h3>Installing the Extension</h3>
+              <p></p>
+            </div>
+          </article>
+          <CarbonFootprintCalculationsCard />
 
-                       value={this.state.price}
-                />
-              </div>
-              <div className={"rounded"} style={{ zIndex: 9999, background: '#F7B434' }}>
-                <div className={'container rounded'}>
-                  <CarbonFootprint price={this.state.price.toString()}/>
-                </div>
-              </div>
+          <article className="container p-0 card my-4 shadow">
+            <div className="card-body">
+              <h1>How Do You Make Money?</h1>
+              <h3>Is Carbon Calculator a Charity?</h3>
+              <p>
+                Not yet—but we're working on that. In the meantime, Carbon
+                Calculator commits to publicly releasing revenue metrics and
+                using any profits to purchase carbon offsets. This means Carbon
+                Calculator is a good way to automatically offset your online
+                shopping, as any affiliate fees that generate profit will
+                purchase carbon offsets.
+              </p>
+              <h3>Affiliate Links</h3>
+              <p>
+                On certain websites the Carbon Calculator browser extension will
+                modify the URL to include our affiliate link. This is
+                transparent to the user, and does not allow Carbon Calculator to
+                collect any information on users.
+              </p>
             </div>
           </article>
         </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default index
+export default index;

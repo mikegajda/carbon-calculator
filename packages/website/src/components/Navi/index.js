@@ -49,6 +49,16 @@ class Navi extends React.Component {
                   />
                 </Link>
               </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/demo">
+                  Demo
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/carbon-footprint-calculations">
+                  About Our Calculations
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
