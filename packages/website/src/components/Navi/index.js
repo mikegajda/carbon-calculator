@@ -25,7 +25,7 @@ class Navi extends React.Component {
         <Meta />
         <div className="container px-0">
           <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">{this.state.title}</h1>
+            <h1 className="navbar-brand mb-0">CO<sub>2</sub> Calculator</h1>
           </Link>
           <button
             class="navbar-toggler border-0"
@@ -50,13 +50,18 @@ class Navi extends React.Component {
                 </Link>
               </li>
               <li className="nav-item active font-weight-bold">
-                <Link className="nav-link" to="/demo">
-                  Demo
+                <Link className="nav-link" to="/extension">
+                  Chrome Extension
                 </Link>
               </li>
               <li className="nav-item active font-weight-bold">
                 <Link className="nav-link" to="/carbon-footprint-calculations">
-                  About Our Calculations
+                  Carbon Calculations
+                </Link>
+              </li>
+              <li className="nav-item active font-weight-bold">
+                <Link className="nav-link" to="/about-us">
+                  About
                 </Link>
               </li>
             </ul>
