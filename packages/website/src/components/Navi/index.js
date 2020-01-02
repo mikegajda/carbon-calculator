@@ -40,8 +40,8 @@ class Navi extends React.Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <Link className="nav-link" to="/posts">
+              <li class="nav-item active font-weight-bold">
+                <Link className="nav-link bold" to="/posts">
                   Blog
                   <i
                     class="fa fa-file-text d-md-none ml-2"
@@ -49,12 +49,12 @@ class Navi extends React.Component {
                   />
                 </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active font-weight-bold">
                 <Link className="nav-link" to="/demo">
                   Demo
                 </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active font-weight-bold">
                 <Link className="nav-link" to="/carbon-footprint-calculations">
                   About Our Calculations
                 </Link>
