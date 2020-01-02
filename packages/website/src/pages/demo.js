@@ -18,7 +18,7 @@ export class DemoCard extends React.Component {
     return (
       <article className="container p-0 card my-4 shadow">
         <div className="card-body">
-          <h1 className="">Live Demo</h1>
+          <h1 className="">Demo</h1>
           <p>
             Change the price in the box below to see the estimated carbon
             footprint go up and down. This demo uses Amazon.com's estimated CO
