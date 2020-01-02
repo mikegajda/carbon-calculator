@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
 const convert = require('convert-units')
 
@@ -29,11 +31,18 @@ export function CarbonFootprint (props: Props) {
   return (
     <div className={`row`}>
       <div className={'col-6 d-flex'}>
-        <h4 className={'align-self-center my-0'}>CO<sub>2</sub> Calculator</h4>
+        <h4 className={'align-self-center my-0'}>CO<sub>2</sub> Calculator
+          <a className={"text-dark"} href={'https://carbon-calculator.netlify.com'}>
+            <FontAwesomeIcon className={'pl-1'}
+                             icon={faInfoCircle}/>
+          </a>
+
+        </h4>
       </div>
       <div className={'col-6'}>
         <div className={'text-right'}>
           <small className={''}>CO<sub>2</sub> Footprint</small>
+
           <h4>{bestUnit.val.toLocaleString(undefined, {
             maximumFractionDigits: 2,
             minimumFractionDigits: 2
