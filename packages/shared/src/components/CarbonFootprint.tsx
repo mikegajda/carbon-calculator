@@ -33,7 +33,7 @@ export function CarbonFootprint (props: Props) {
       </div>
       <div className={'col-6'}>
         <div className={'text-right'}>
-          <small className={'font-weight-light'}>CO<sub>2</sub> Footprint</small>
+          <small className={''}>CO<sub>2</sub> Footprint</small>
           <h4>{bestUnit.val.toLocaleString(undefined, {
             maximumFractionDigits: 2,
             minimumFractionDigits: 2
