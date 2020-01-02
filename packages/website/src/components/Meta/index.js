@@ -19,7 +19,7 @@ export function getHostName() {
   try {
     return window.location.hostname;
   } catch {
-    return "mikegajda.com";
+    return "carbon-calculator.netlify.com";
   }
 }
 
