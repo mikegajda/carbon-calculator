@@ -51,11 +51,11 @@ export default class Meta extends React.Component {
           { name: "twitter:card", content: `${this.props.twitterSummaryType}` },
           {
             name: "twitter:site",
-            content: `@mikendever`
+            content: `@CO2Calculator`
           },
           {
             name: "twitter:creator",
-            content: `@mikendever`
+            content: `@CO2Calculator`
           },
           { property: "og:title", content: `${ogTitle}` },
           { property: "og:type", content: `${this.props.ogType}` },
@@ -89,7 +89,7 @@ Meta.propTypes = {
 Meta.defaultProps = {
   description: "No description available at this time.",
   url: "/",
-  image: "/img/android-chrome-512x512.png",
+  image: "/img/social-share-banner.png",
   twitterSummaryType: "summary",
   ogType: "website"
 };
