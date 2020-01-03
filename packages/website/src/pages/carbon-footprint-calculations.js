@@ -82,7 +82,7 @@ export class CarbonFootprintCalculationsCard extends React.Component {
           </p>
           <p>
             If you know of a retailer that isn't supported on the list above but
-            publishing carbon footprint metrics, create an issue here:{" "}
+            is publishing carbon footprint metrics, create an issue here:{" "}
             <a href={"https://github.com/mikegajda/carbon-calculator/issues"}>
               GitHub Issues
             </a>
