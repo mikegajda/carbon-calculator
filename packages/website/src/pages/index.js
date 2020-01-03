@@ -27,7 +27,7 @@ class index extends React.Component {
             description={`Carbon Calculator detects the price of items as your browse online and shows you the estimated
                 carbon impact of these items`}
             url={`/`}
-            image={`/img/social-share-banner.png`}
+            image={`/img/social-share-banner-new.png`}
             ogType={"article"}
             twitterSummaryType={"summary_large_image"}
           />

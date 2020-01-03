@@ -89,7 +89,7 @@ Meta.propTypes = {
 Meta.defaultProps = {
   description: "No description available at this time.",
   url: "/",
-  image: "/img/social-share-banner.png",
+  image: "/img/social-share-banner-new.png",
   twitterSummaryType: "summary",
   ogType: "website"
 };
