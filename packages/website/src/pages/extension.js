@@ -36,8 +36,8 @@ export class ExtensionCard extends React.Component {
           </p>
           <h3>Installation</h3>
           <p>
-            Simply click the link above and then click the "Add to Chrome"
-            button like below:
+            Simply click the link above and then click the blue "Add to Chrome"
+            button:
             <a
               target={"_blank"}
               href={
@@ -48,17 +48,16 @@ export class ExtensionCard extends React.Component {
             </a>
           </p>
           <p>
-            After this you'll see an orange banner at the bottom of supported
-            pages just like this:
+            After this, you'll see an orange banner at the bottom of supported
+            pages like this:
           </p>
           <ExampleAmazonScreenshot />
           <p></p>
           <h3>Privacy</h3>
           <p>
             Carbon Calculator does not collect any information as you browse,
-            nor does it share any information with third parties. It does need
-            to ask for Chrome permissions so it can read data on websites that
-            we support showing carbon estimates for. The code is fully
+            nor does it share any information with third parties. Carbon Calculator does need
+            to ask for Chrome permissions so it can read the price from websites. The code is fully
             open-sourced here so that you can take a look for yourself:{" "}
             <a
               target={"_blank"}

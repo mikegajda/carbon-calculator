@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react'
 import Meta, {
   defaultTitlePrefix,
   getTitleFromHostname
-} from "components/Meta";
-import Layout from "components/Layout";
-import Img from "gatsby-image";
-import { Link } from "gatsby";
-import { CarbonFootprint } from "../../../shared/src/components/CarbonFootprint";
+} from 'components/Meta'
+import Layout from 'components/Layout'
+import Img from 'gatsby-image'
+import { Link } from 'gatsby'
+import { CarbonFootprint } from '../../../shared/src/components/CarbonFootprint'
 
 export class CarbonFootprintCalculationsCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { price: 12.0 };
+  constructor (props) {
+    super(props)
+    this.state = { price: 12.0 }
   }
 
-  render() {
+  render () {
     return (
       <article className="container p-0 card my-4 shadow">
         <div className="card-body">
@@ -48,11 +48,10 @@ export class CarbonFootprintCalculationsCard extends React.Component {
           <p>
             It should be noted, this is an estimate and cannot fully account for
             all emissions attributable to the production of an item. At this
-            time the EIO LCA model is most accurate, but should the research
-            support new ways to measure carbon, Carbon Calculator will adopt
-            those new models. If you have a concern about accuracy, feel free to
-            raise an issue on GitHub:{" "}
-            <a href={"https://github.com/mikegajda/carbon-calculator/issues"}>
+            time the EIO LCA model is most widely used, but Carbon Calculator is open to adopting new methodologies. If
+            you have a concern about accuracy, feel free to
+            raise an issue on GitHub:{' '}
+            <a href={'https://github.com/mikegajda/carbon-calculator/issues'}>
               GitHub Issues
             </a>
           </p>
@@ -69,10 +68,10 @@ export class CarbonFootprintCalculationsCard extends React.Component {
             Carbon Calculator currently supports the following retailers:
             <ul>
               <li>
-                <b>Amazon.com</b>{" "}
+                <b>Amazon.com</b>{' '}
                 <a
                   href={
-                    "https://d39w7f4ix9f5s9.cloudfront.net/a4/ad/b9eca67e4578b35e8f995c8b4f9c/amazon-carbon-methodology-september-2019.pdf"
+                    'https://d39w7f4ix9f5s9.cloudfront.net/a4/ad/b9eca67e4578b35e8f995c8b4f9c/amazon-carbon-methodology-september-2019.pdf'
                   }
                 >
                   Amazon September 2019 EIO LCA Report
@@ -82,32 +81,32 @@ export class CarbonFootprintCalculationsCard extends React.Component {
           </p>
           <p>
             If you know of a retailer that isn't supported on the list above but
-            is publishing carbon footprint metrics, create an issue here:{" "}
-            <a href={"https://github.com/mikegajda/carbon-calculator/issues"}>
+            is publishing carbon footprint metrics, create an issue here:{' '}
+            <a href={'https://github.com/mikegajda/carbon-calculator/issues'}>
               GitHub Issues
             </a>
           </p>
         </div>
       </article>
-    );
+    )
   }
 }
 
 class carbonFootprintCalculations extends React.Component {
-  render() {
+  render () {
     return (
-      <Layout location={"/"}>
+      <Layout location={'/'}>
         <div className="px-0">
           <Meta
             title={`Carbon Footprint Calculations`}
             description={`Carbon Footprint Calculations`}
             url={`/carbon-footprint-calculations`}
           />
-          <CarbonFootprintCalculationsCard />
+          <CarbonFootprintCalculationsCard/>
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default carbonFootprintCalculations;
+export default carbonFootprintCalculations
