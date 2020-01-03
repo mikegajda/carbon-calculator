@@ -22,7 +22,7 @@ export class ExtensionCard extends React.Component {
         <div className="card-body">
           <h1>Chrome Extension</h1>
           <p>
-            Carbon Calculator is available in the Google Chrome Store here:
+            Carbon Calculator is available in the Google Chrome Web Store here:
             <span> </span>
             <a
               target={"_blank"}

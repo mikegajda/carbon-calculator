@@ -47,7 +47,14 @@ export class CarbonFootprintCalculationsCard extends React.Component {
           </p>
           <p>
             It should be noted, this is an estimate and cannot fully account for
-            all emissions attributable to the production of an item.
+            all emissions attributable to the production of an item. At this
+            time the EIO LCA model is most accurate, but should the research
+            support new ways to measure carbon, Carbon Calculator will adopt
+            those new models. If you have a concern about accuracy, feel free to
+            raise an issue on GitHub:{" "}
+            <a href={"https://github.com/mikegajda/carbon-calculator/issues"}>
+              GitHub Issues
+            </a>
           </p>
           <h3>Estimating the Carbon Intensity for a Retailer</h3>
           <p>
@@ -72,6 +79,13 @@ export class CarbonFootprintCalculationsCard extends React.Component {
                 </a>
               </li>
             </ul>
+          </p>
+          <p>
+            If you know of a retailer that isn't supported on the list above but
+            publishing carbon footprint metrics, create an issue here:{" "}
+            <a href={"https://github.com/mikegajda/carbon-calculator/issues"}>
+              GitHub Issues
+            </a>
           </p>
         </div>
       </article>
