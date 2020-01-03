@@ -2,11 +2,11 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export default () => (
+export default props => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "banner-logo.png" }) {
+        file(relativePath: { eq: "example_amazon_screenshot.png" }) {
           childImageSharp {
             fluid(maxWidth: 738) {
               tracedSVG
@@ -24,7 +24,7 @@ export default () => (
     render={data => {
       return (
         <Img
-          className="card-img-top"
+          className={`${props.className}`}
           style={{ display: "block", margin: "0 auto" }}
           fluid={data.file.childImageSharp.fluid}
         />

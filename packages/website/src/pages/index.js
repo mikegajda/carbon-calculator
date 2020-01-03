@@ -24,7 +24,7 @@ class index extends React.Component {
         <div className="px-0">
           <Meta
             title={`Home`}
-            description={`Carbon Calculator detects the price of items as your browse on the web and shows you the estimated
+            description={`Carbon Calculator detects the price of items as your browse online and shows you the estimated
                 carbon impact of these items`}
             url={`/`}
             image={`/img/social-share-banner.png`}
@@ -35,10 +35,18 @@ class index extends React.Component {
             <BannerImage />
             <div className="card-body">
               <p>
-                Carbon Calculator detects the price of items as your browse on
-                the web and shows you the estimated carbon impact of these
-                items.
+                Carbon Calculator detects the price of items as your browse
+                online and shows you the estimated carbon impact of these items.
               </p>
+              <a
+                target={"_blank"}
+                className={"btn btn-dark btn-block font-weight-bold mt-2"}
+                href={
+                  "https://chrome.google.com/webstore/detail/carbon-calculator/onljifombjjdcdloodaffmkaphjlgmab"
+                }
+              >
+                Download Carbon Calculator for Google Chrome
+              </a>
             </div>
           </article>
           <DemoCard />

@@ -29,7 +29,7 @@ export function CarbonFootprint (props: Props) {
   let poundsOfCarbon = convert(gramsOfCarbon).from('g').to('lb')
   let bestUnit = convert(poundsOfCarbon).from('lb').toBest()
   return (
-    <div className={`row`}>
+    <div className={`row`}>   
       <div className={'col-6 d-flex'}>
         <h4 className={'align-self-center my-0'}>CO<sub>2</sub> Calculator
           <a className={"text-dark"} href={'https://carbon-calculator.netlify.com'}>
