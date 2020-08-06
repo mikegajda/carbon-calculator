@@ -16,6 +16,7 @@ export default class HTML extends React.Component {
       title: getTitleFromHostname("Carbon Calculator")
     });
   }
+
   render() {
     return (
       <html lang="en">

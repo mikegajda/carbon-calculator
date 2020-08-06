@@ -39,7 +39,7 @@ export function CarbonFootprint (props: Props) {
       </div>
       <div className={'col-6'}>
         <div className={'text-right'}>
-          <small className={''}>CO<sub>2</sub> Footprint</small>
+          <small className={''}>Estimated CO<sub>2</sub>e Footprint</small>
 
           <h4>{bestUnit.val.toLocaleString(undefined, {
             maximumFractionDigits: 2,

@@ -42,7 +42,7 @@ export class DemoCard extends React.Component {
           </div>
           <div
             className={"rounded"}
-            style={{ zIndex: 9999, background: "#F7B434" }}
+            style={{ zIndex: 9999, background: "#FCDA90" }}
           >
             <div className={"container rounded"}>
               <CarbonFootprint price={this.state.price.toString()} />

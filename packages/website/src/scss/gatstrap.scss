@@ -79,6 +79,13 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+a {
+  color: $red;
+}
+
+a:hover {
+  color: $red;
+}
 
 img {
   margin-bottom: 15px;
